@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, necessitatibus.</p>
+    <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, necessitatibus.</p>
+    <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, necessitatibus.</p>
+    <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, necessitatibus.</p>
+    <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, necessitatibus.</p>
+    <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, necessitatibus.</p>
+    <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, necessitatibus.</p>
+    <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, necessitatibus.</p>
+    <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, necessitatibus.</p>
+    <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, necessitatibus.</p>
+    <script>
+        let val = document.getElementsByClassName('text1');
+        function BackColor(a){
+            let val1 = (Math.floor(Math.random() * (9) - (0) + (0)));
+            for(let i = 0; i<val.length; i++){
+                if(i == val1){
+                    val[i].style.backgroundColor = 'red';
+                }else{
+                    continue;
+                }
+        }
+        }
+        BackColor(val);
+        function DelColor(a){
+            for(let i = 0; i < val.length; i++){
+                if(val[i].style.backgroundColor = 'red'){
+                    val[i].style.backgroundColor = 'white';
+                }else{
+                    continue;
+                }
+            }
+        }
+        setInterval(BackColor,1000);
+
+        let del = setInterval(DelColor,1500);
+        
+        console.log(val);
+        
+    </script>
+</body>
+</html>

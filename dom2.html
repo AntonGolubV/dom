@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .red1{
+        color: red;
+    }  
+    .blue2{
+        color: blue;
+    }
+    .yellow3{
+        color: yellow;
+    }
+    </style>
+    
+</head>
+<body>
+    <h1 class="text1" name="text1">Я первый заголовок H1</h1>
+    <p class="text2" name="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cumque?</p>
+    <p class="text1" name="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cumque?</p>
+    <h1 class="text2"name="text2" >Я второй заголовок H1</h1>
+    <p class="text1" name="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cumque?</p>
+    <p class="tett2" name="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cumque?</p>
+    <h1 class="text3"name="text3" >Я третий заголовок H1</h2>
+    <p class="text2" name="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cumque?</p>
+    <p class="text1" name="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cumque?</p>
+
+    <script>
+
+    let val = document.getElementsByName('text1');
+    for(let item of val){
+        item.style.color = 'red';
+    }
+   
+
+    let val1 = document.getElementsByName('text2');
+    for(let item1 of val1){
+        item1.style.color = 'blue';
+    }
+
+
+    let val2 = document.getElementsByName('text3');
+    for(let item2 of val2){
+        item2.style.color = 'yellow';
+    }
+
+
+    console.log(val);
+    console.log(val1);
+    console.log(val2);
+    
+    </script>
+</body>
+</html>

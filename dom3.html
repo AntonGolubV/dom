@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, laudantium.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, laudantium.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, laudantium.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, laudantium.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, laudantium.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, laudantium.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, laudantium.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, laudantium.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, laudantium.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, laudantium.</p>
+    <script>
+        let count = 1;
+         let val = document.getElementsByTagName('p');
+         for(let item of val){
+            /* debugger; */
+            if(count%2 == 0){
+                item.style.backgroundColor = 'red';
+                count++;
+            }else{
+               
+                 debugger;
+                 count++;
+                   continue;
+            }
+           
+               
+            }
+            
+         
+         console.log(val);
+         console.log(count);
+    </script>
+   
+</body>
+</html>
